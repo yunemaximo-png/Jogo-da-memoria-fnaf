@@ -11,15 +11,27 @@
     width: 100%;
     background-color: black;
     border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
 }
 .face{
     width: 100%;
     height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(71, 25, 9);
+    border-radius: 5px;
 }
 .front{
-    background-color: red;
+    background-image: url(../Imagens/Freddy1.png);
+    transform: rotateY(180deg);
 }
 .back{
     background-image: url('../Imagens/fnaf_back.png');
-    
+    backface-visibility: hidden;
+}
+.card:hover{
+    transform: rotateY(180deg)
 }
