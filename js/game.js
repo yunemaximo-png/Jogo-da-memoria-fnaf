@@ -9,8 +9,7 @@ const characters = [
     'Bonnie2',
     'Chica2',
     'Foxy2',
-    'Freddy2',
-    'Golden2',
+    'Freddy2'
 ];
 
 
@@ -24,25 +23,8 @@ const createElement = (tag, className)=> {
 let firstCard = '';
 let secondCard = '';
 
-const revealCard = ({target}) => {
-
-if (target.parentNode.createName.includes('reveal-card')) {
-    return;
-}
-
-if (firstCard === ''){
-    target.parentNode.classList.add('reveal-card');
-    firstCard = target.parentNode;
-} else if (secondCard === '') {
- 
-    target.parentNode.classList.add('reveal-card');
-    secondCardCard = target.parentNode;
-
-    checkCards();
-
-
-}
-
+const revealCard = ({ target }) => {
+  target.parentNode.classList.add('reveal-card');
 }
 
 function createCard(character) {
@@ -63,7 +45,7 @@ function createCard(character) {
 
 const loadGame = () => {
 
-    const duplicateCharacter = [ ...characters, ...characters ];
+    const duplicateCharacter = [...characters,...characters ];
 
     const shuffledArray = duplicateCharacter.sort(() => Math.random() - 0.5);
 
