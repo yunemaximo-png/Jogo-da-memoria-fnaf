@@ -1,9 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../Imagens/sala.png);
+    background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(165, 108, 42);
+    font-size: 1.;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5 px;
+}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;  
 }
 .card{
@@ -22,14 +49,20 @@
     background-position: center;
     border: 2px solid rgb(71, 25, 9);
     border-radius: 5px;
+    transition: all 400ms ease;
 }
 .front{
     transform: rotateY(180deg);
 }
 .back{
-    background-image: url('../Imagens/fnaf_back.png');
+    background-image: url('../Imagens/fnafBack.png');
     backface-visibility: hidden;
 }
 .reveal-card{
     transform: rotateY(180deg)
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
 }
