@@ -4,16 +4,17 @@ const timer = document.querySelector('.timer');
 const musica = new Audio('../Audio/five-nights-at-freddys.mp3');
 
 const characters = [
-    'Bonnie1',
-    'Chica1',
-    'Foxy1',
-    'Freddy1',
-    'Golden1',
-    'Bonnie2',
-    'Chica2',
-    'Foxy2',
-    'Freddy2',
-    'Golden2'
+    'bonnie11',
+    'chica11',
+    'foxy11',
+    'freddy11',
+    'golden11',
+    'bonnie22',
+    'chica22',
+    'foxy22',
+    'freddy22',
+    'golden22',
+    
 ];
 
 
