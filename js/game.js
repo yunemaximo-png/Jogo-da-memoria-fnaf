@@ -1,7 +1,7 @@
 const grid = document.querySelector('.grid');
 const spanPlayer= document.querySelector('.player')
 const timer = document.querySelector('.timer');
-const musica = new Audio('../Audio/five-nights-at-freddys.mp3');
+const musica = new Audio('../musica/five-nights-at-freddys.mp3');
 
 const characters = [
     'bonnie11',
@@ -94,7 +94,7 @@ function createCard(character) {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('../Imagens/${character}.png')`;
+    front.style.backgroundImage = `url('../imagem/${character}.png')`;
 
     card.appendChild(front);
     card.appendChild(back);
