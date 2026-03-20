@@ -1,6 +1,7 @@
 const grid = document.querySelector('.grid');
 const spanPlayer= document.querySelector('.player')
 const timer = document.querySelector('.timer');
+const musica = new Audio('../Audio/five-nights-at-freddys.mp3');
 
 const characters = [
     'Bonnie1',
@@ -31,7 +32,7 @@ const checkEndGame = () => {
 
     if (disabledCards.length === 20) {
         clearInterval(this.loop);
-        alert('Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}');
+        alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} segundos.`);
     }
 }
 
@@ -133,4 +134,5 @@ window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
     startTimer();
     loadGame();
+    musica.play();
 }
